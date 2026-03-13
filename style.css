@@ -1,0 +1,11 @@
+body { font-family: sans-serif; background: #f4f4f9; display: flex; justify-content: center; padding: 20px; }
+.container { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%; max-width: 500px; text-align: center; }
+.display { font-size: 3rem; font-family: monospace; margin: 1rem 0; color: #333; }
+.controls { margin-bottom: 2rem; display: flex; gap: 10px; justify-content: center; }
+button { padding: 10px 15px; cursor: pointer; border: none; border-radius: 5px; background: #007bff; color: white; transition: 0.3s; }
+button:disabled { background: #ccc; cursor: not-allowed; }
+button:hover:not(:disabled) { background: #0056b3; }
+#btnReset { background: #dc3545; }
+table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+th, td { border-bottom: 1px solid #ddd; padding: 12px; text-align: center; }
+th { background: #f8f9fa; }
