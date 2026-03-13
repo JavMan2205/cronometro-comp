@@ -7,7 +7,6 @@ let captureCount = 0;
 const display = document.getElementById('display');
 const resultsBody = document.getElementById('resultsBody');
 
-// Formatea milisegundos a HH:MM:SS.mm
 function formatTime(ms) {
     let date = new Date(ms);
     let hh = String(date.getUTCHours()).padStart(2, '0');
@@ -45,14 +44,12 @@ function capture() {
     captureCount++;
     const currentCapture = elapsedTime;
     
-    // Si es el primero, la diferencia es 0
     if (firstCompetitorTime === null) {
         firstCompetitorTime = currentCapture;
     }
 
     const difference = currentCapture - firstCompetitorTime;
 
-    // Crear fila en la tabla
     const row = document.createElement('tr');
     row.innerHTML = `
         <td>${captureCount}</td>
